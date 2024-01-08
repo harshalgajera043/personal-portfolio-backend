@@ -1,0 +1,22 @@
+{
+  "name": "personal-portfolio-backend",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix personal-portfolio-frontend",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "author": "Shivam Panchal",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22"
+  }
+}
